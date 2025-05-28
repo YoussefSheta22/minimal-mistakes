@@ -1,0 +1,18 @@
+digraph syntaxtree {
+    node [shape=plaintext];
+
+    Sentence -> NP;
+    Sentence -> VP;
+    
+    NP -> Det [label="the"];
+    NP -> N [label="man"];
+    
+    VP -> Verb [label="took"];
+    VP -> NP2 [label="NP"];
+    
+    NP2 -> Det2 [label="the"];
+    NP2 -> N2 [label="book"];
+    
+    labelloc="t";
+    label="Syntax Tree (Chomsky, 1956)";
+}
